@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <title>CSS Positioning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="header">
+      <h1 id="title">CSS, relative vs absolute vs fixed positioning</h1>
+      <p>To position elements on a page CSS offers many different ways</p>
+    </div>
+
+    <div style="text-align: center">
+      <h2>Position types in CSS</h2>
+      <ul style="list-style-type: none">
+        <li>Static</li>
+        <li>Relative</li>
+        <li>Absolute</li>
+        <li>Fixed</li>
+        <li>Sticky</li>
+      </ul>
+
+      <div class="flex-row">
+        <div class="three-columns">
+          <h2>Relative positioning</h2>
+          <p>
+            Relative positioning adjusts the element respective of its normal
+            position. When used alone (position:relative;) without other
+            attributes nothing will happen and will look like "position:
+            static;". When used with a position attribute you can move the
+            element from its normal position e.g 70px from the top and 30px from
+            the left from its original positions.
+          </p>
+          <img
+            style="width: 250px"
+            src="https://storage.kraken.io/kk8yWPxzXVfBD3654oMN/cf2f3745c0023aece34ab9ed11eb1051/position_relative.png"
+            alt="Example of relative positioning"
+          />
+        </div>
+        <div class="three-columns">
+          <h2>Absolute positioning</h2>
+          <p>
+            Absolute positioning allows you to select exactly where on the page
+            you want the element. You can specify the exact top, left, bottom
+            and right locations within the parent (e.g document body). However,
+            the now removes the element from the flow of the page. This means
+            this element does not affected and does not affect other elements.
+          </p>
+
+          <img
+            style="width: 250px"
+            src="https://storage.kraken.io/kk8yWPxzXVfBD3654oMN/5ffb6395cad066a2a135d181569d5f8d/position_absolute.png"
+            alt="Example of relative positioning"
+          />
+        </div>
+
+        <div class="three-columns">
+          <h2>Fixed positioning</h2>
+          <p>
+            Fixed positioning allows you to select exactly where in the viewport
+            you want the element. You can specify the exact top, left, bottom
+            and right locations relative to the viewport. However, this also now
+            removes the element from the flow of the page. This means this
+            element does not affected and does not affect other elements.
+          </p>
+
+          <br />
+          For more about 'in and out of flow',
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flow_layout/In_flow_and_out_of_flow"
+            >Click Here</a
+          >
+          <br />
+          For more about position types,
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position"
+            >Click Here</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="home-button">
+      <a href="../index.html"> Return To HomePage</a>
+    </div>
+  </body>
+</html>
