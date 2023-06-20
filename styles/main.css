@@ -4,6 +4,10 @@ body {
   font-family: 'Kanit', sans-serif;
 }
 
+.header {
+  text-align: center;
+}
+
 a:link {
   color: #e8e8e8;
 }
