@@ -4,12 +4,47 @@ body {
   font-family: 'Kanit', sans-serif;
 }
 
+a:link {
+  color: #e8e8e8;
+}
+a:visited {
+  color: #f0a5f3;
+}
+
 .left {
   float: left;
-  width: 75%;
+  width: 70%;
 }
 
 .right {
   float: right;
-  width: 25%;
+  width: 30%;
+}
+
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* Reverts the column effect after*/
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+#title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#intro-photos-h {
+  max-width: auto;
+  height: 10em;
+}
+
+#intro-photos-v {
+  max-width: auto;
+  height: 10em;
 }
