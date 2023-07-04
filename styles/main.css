@@ -5,6 +5,17 @@ body {
   font-size: large;
 }
 
+table tr td {
+  border-color: #e8e8e8;
+  border: 0.1em solid;
+}
+
+table {
+  margin: 50px auto 50px auto;
+  border-collapse: collapse;
+  justify-content: center;
+}
+
 .header {
   text-align: center;
 }
